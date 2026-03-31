@@ -208,6 +208,13 @@ class SilktideCookieBanner {
 
     // finally update the checkboxes in the modal with the values from localStorage
     this.updateCheckboxState();
+    
+// Remove entire Silktide wrapper after consent is handled
+if (this.wrapper && this.wrapper.parentNode) {
+    this.wrapper.parentNode.removeChild(this.wrapper);
+    this.wrapper = null;
+}
+
   }
 
   getAcceptedCookies() {
