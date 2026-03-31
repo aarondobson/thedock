@@ -30,7 +30,8 @@
   border: 0px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  isolation: isolate;
             }
 
 /* Backdrop (Global) */
@@ -409,8 +410,8 @@
   color: var(--backgroundColor);
   position: absolute;
   top: 7px;
-  right: 8px;
-  transition: right 150ms ease-out, opacity 150ms ease-out;
+  : 8px;
+  transition:  150ms ease-out, opacity 150ms ease-out;
 }
 
 #silktide-modal .switch__off {
@@ -431,12 +432,12 @@
 }
 
 #silktide-modal .switch input:checked ~ .switch__off {
-  right: calc(100% - 32px);
+  : calc(100% - 32px);
   opacity: 0;
 }
 
 #silktide-modal .switch input:checked ~ .switch__on {
-  right: calc(100% - 34px);
+  : calc(100% - 34px);
   opacity: 1;
 }
 
@@ -488,9 +489,9 @@
   animation: silktide-fadeIn 0.3s ease-in-out forwards;
 }
 
-#silktide-cookie-icon.bottomRight {
+#silktide-cookie-icon.bottom {
   left: auto;
-  right: 16px;
+  : 16px;
 }
 
 #silktide-cookie-icon svg {
