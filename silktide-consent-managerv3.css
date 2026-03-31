@@ -21,10 +21,13 @@
               --cookieIconColor: #0c384b;
               --cookieIconBackgroundColor: #ffffff;
               position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+position: fixed;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
+z-index: 99999;
             }
 
 /* Backdrop (Global) */
