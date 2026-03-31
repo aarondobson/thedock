@@ -408,17 +408,6 @@ class SilktideCookieBanner {
         ? ` aria-label="${rejectNonEssentialButtonLabel}"` 
         : ''
     }>${rejectNonEssentialButtonText}</button>`;
-    
-    // Credit link
-    const creditLinkText = this.config.text?.preferences?.creditLinkText || 'Get this banner for free';
-    const creditLinkAccessibleLabel = this.config.text?.preferences?.creditLinkAccessibleLabel;
-    const creditLink = `<a href="https://silktide.com/consent-manager" target="_blank" rel="noreferrer"${
-      creditLinkAccessibleLabel && creditLinkAccessibleLabel !== creditLinkText
-        ? ` aria-label="${creditLinkAccessibleLabel}"`
-        : ''
-    }>${creditLinkText}</a>`;
-    
-    
 
     const modalContent = `
       <header>
